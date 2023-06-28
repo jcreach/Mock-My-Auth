@@ -16,7 +16,7 @@ namespace MockMyAuth.Controllers
             this._configuration = configuration;
         }
 
-        [HttpGet("login")]
+        [HttpGet("simple-login")]
         public ActionResult<string> GetToken(string username, string password)
         {
             if(string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))

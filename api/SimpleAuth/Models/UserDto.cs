@@ -1,4 +1,4 @@
-namespace MockMyAuth.Models
+namespace SimpleAuth.Models
 {
     public class UserDto
     {

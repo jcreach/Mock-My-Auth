@@ -1,0 +1,12 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+
+version: '3.4'
+
+services:
+  simpleauth:
+    image: simpleauth
+    build:
+      context: .
+      dockerfile: deploy/api.dockerfile
+    ports:
+      - 5032:5032
